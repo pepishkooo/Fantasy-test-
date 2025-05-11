@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Fantasy Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #1f1b2e, #3a2e4f);
+      font-family: 'MedievalSharp', cursive;
+      color: #f0e6d2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .quiz-container {
+      background-color: rgba(35, 30, 60, 0.95);
+      border: 2px solid #d6af6d;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 0 20px rgba(255, 220, 160, 0.5);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffe08a;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #cdbb99;
+    }
+
+    .question-block {
+      margin-bottom: 20px;
+    }
+
+    .question-block p {
+      font-size: 17px;
+      color: #ffd179;
+    }
+
+    label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #d6af6d;
+      border: none;
+      border-radius: 8px;
+      font-family: 'MedievalSharp', cursive;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f0cc88;
+    }
+
+    .result-block {
+      margin-top: 30px;
+      background-color: rgba(45, 35, 65, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 16px;
+      color: #a7e0aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Fantasy Quiz</h1>
+    <p class="intro">Перевір свою магічну мудрість!</p>
+
+    <form id="quizForm">
+      <!-- Питання 1–6 -->
+      <div class="question-block">
+        <p>1. Яка істота має здатність відроджуватись із попелу?</p>
+        <label><input type="radio" name="q1" value="0"> Дракон</label>
+        <label><input type="radio" name="q1" value="1"> Фенікс</label>
+        <label><input type="radio" name="q1" value="0"> Циклоп</label>
+      </div>
+
+      <div class="question-block">
+        <p>2. Який предмет дозволяє ставати невидимим?</p>
+        <label><input type="radio" name="q2" value="0"> Меч Імли</label>
+        <label><input type="radio" name="q2" value="1"> Плащ невидимості</label>
+        <label><input type="radio" name="q2" value="0"> Книга Тіней</label>
+      </div>
+
+      <div class="question-block">
+        <p>3. Яке королівство відоме ельфійськими лучниками?</p>
+        <label><input type="radio" name="q3" value="0"> Мордор</label>
+        <label><input type="radio" name="q3" value="0"> Гондор</label>
+        <label><input type="radio" name="q3" value="1"> Лотлорієн</label>
+      </div>
+
+      <div class="question-block">
+        <p>4. Який камінь використовують маги для збереження заклять?</p>
+        <label><input type="radio" name="q4" value="1"> Обсидіан</label>
+        <label><input type="radio" name="q4" value="0"> Кварц</label>
+        <label><input type="radio" name="q4" value="0"> Крейда</label>
+      </div>
+
+      <div class="question-block">
+        <p>5. Хто править Небесною Вежею?</p>
+        <label><input type="radio" name="q5" value="0"> Темний Лорд</label>
+        <label><input type="radio" name="q5" value="1"> Архімаг Ельрон</label>
+        <label><input type="radio" name="q5" value="0"> Король гномів</label>
+      </div>
+
+      <div class="question-block">
+        <p>6. Який артефакт дає силу контролювати час?</p>
+        <label><input type="radio" name="q6" value="1"> Піщинка вічності</label>
+        <label><input type="radio" name="q6" value="0"> Перо фенікса</label>
+        <label><input type="radio" name="q6" value="0"> Ключ від катакомб</label>
+      </div>
+
+      <!-- Питання 7–10 -->
+      <div class="question-block">
+        <p>7. Яка істота охороняє скарби у печерах?</p>
+        <label><input type="radio" name="q7" value="1"> Дракон</label>
+        <label><input type="radio" name="q7" value="0"> Грифон</label>
+        <label><input type="radio" name="q7" value="0"> Єдиноріг</label>
+      </div>
+
+      <div class="question-block">
+        <p>8. Який магічний предмет зцілює будь-які рани?</p>
+        <label><input type="radio" name="q8" value="0"> Щит відчаю</label>
+        <label><input type="radio" name="q8" value="1"> Чаша життя</label>
+        <label><input type="radio" name="q8" value="0"> Книга чар</label>
+      </div>
+
+      <div class="question-block">
+        <p>9. Що використовується для виклику духів?</p>
+        <label><input type="radio" name="q9" value="1"> Місячний кристал</label>
+        <label><input type="radio" name="q9" value="0"> Еліксир сили</label>
+        <label><input type="radio" name="q9" value="0"> Камінь мудрості</label>
+      </div>
+
+      <div class="question-block">
+        <p>10. Який рід магії дозволяє керувати стихіями?</p>
+        <label><input type="radio" name="q10" value="1"> Елементальна магія</label>
+        <label><input type="radio" name="q10" value="0"> Ілюзії</label>
+        <label><input type="radio" name="q10" value="0"> Некромантія</label>
+      </div>
+
+      <button type="button" onclick="checkQuiz()">Перевірити результат</button>
+    </form>
+
+    <div id="result" class="result-block" style="display: none;"></div>
+  </div>
+
+  <script>
+    function checkQuiz() {
+      const total = 10;
+      let score = 0;
+      let resultDetails = "";
+
+      const correctAnswers = {
+        q1: "Фенікс",
+        q2: "Плащ невидимості",
+        q3: "Лотлорієн",
+        q4: "Обсидіан",
+        q5: "Архімаг Ельрон",
+        q6: "Піщинка вічності",
+        q7: "Дракон",
+        q8: "Чаша життя",
+        q9: "Місячний кристал",
+        q10: "Елементальна магія"
+      };
+
+      for (let i = 1; i <= total; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected) {
+          if (selected.value === "1") {
+            score++;
+            resultDetails += `<p>Питання ${i}: <span style="color:#a7e0aa">Правильно</span></p>`;
+          } else {
+            resultDetails += `<p>Питання ${i}: <span style="color:#ff9d9d">Неправильно</span> 
+              (Правильна відповідь: <strong>${correctAnswers['q' + i]}</strong>)</p>`;
+          }
+        } else {
+          resultDetails += `<p>Питання ${i}: <span style="color:#ffcc80">Не вибрано</span> 
+            (Правильна відповідь: <strong>${correctAnswers['q' + i]}</strong>)</p>`;
+        }
+      }
+
+      const resultBlock = document.getElementById("result");
+      resultBlock.style.display = "block";
+
+      let summary = `<h2>Результат:</h2><p>Твій бал: <strong>${score} / ${total}</strong></p>`;
+      let feedback = "";
+
+      if (score === total) {
+        feedback = "Ти легенда світу фентезі!";
+      } else if (score >= 7) {
+        feedback = "Справжній чарівник!";
+      } else if (score >= 4) {
+        feedback = "Ти — учень мага. Продовжуй тренування!";
+      } else {
+        feedback = "Почни з основ. Кожен герой має свій шлях!";
+      }
+
+      resultBlock.innerHTML = `${summary}<p>${feedback}</p><hr>${resultDetails}`;
+    }
+  </script>
+</body>
+</html>
