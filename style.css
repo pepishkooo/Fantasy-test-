@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#1b1b2f, #3a3a6a);
+  font-family: 'MedievalSharp', cursive;
+  color: #f0e6d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fantasy-card {
+  background-color: rgba(30, 30, 60, 0.85);
+  border: 2px solid #c9a96e;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(200, 160, 90, 0.6);
+}
+
+.fantasy-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+  border: 1px solid #c9a96e;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #d0b080;
+  margin-bottom: 10px;
+}
+
+.lore {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #c9a96e;
+  color: #1b1b2f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'MedievalSharp', cursive;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+button:hover {
+  background-color: #e0c590;
+}
+
+.question {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0c590;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+button:active + .question {
+  display: block;
+  opacity: 1;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1f1b2e, #3a2e4f);
+  font-family: 'MedievalSharp', cursive;
+  color: #f0e6d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quiz-container {
+  background-color: rgba(35, 30, 60, 0.9);
+  border: 2px solid #d6af6d;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 220, 160, 0.5);
+}
+
+.quiz-container h1 {
+  text-align: center;
+  color: #ffe08a;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #cdbb99;
+}
+
+.question-block {
+  margin-bottom: 25px;
+}
+
+.question-block p {
+  font-size: 18px;
+  color: #ffd179;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.thanks {
+  text-align: center;
+  color: #a7e0aa;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+
+
+
+.submit-button {
+  display: block;
+  background-color: #d6af6d;
+  color: #2c1e3f;
+  padding: 12px 20px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.submit-button:hover {
+  background-color: #f0cc88;
+}
+
+.result-block {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px dashed #c5aa6a;
+  background-color: rgba(40, 30, 60, 0.6);
+  border-radius: 10px;
+}
+
+.result-block h2 {
+  color: #ffe08a;
+}
+
+.tip {
+  font-size: 13px;
+  color: #999;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1f1b2e, #3a2e4f);
+  font-family: 'MedievalSharp', cursive;
+  color: #f0e6d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quiz-container {
+  background-color: rgba(35, 30, 60, 0.95);
+  border: 2px solid #d6af6d;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 220, 160, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #ffe08a;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #cdbb99;
+}
+
+.question-block {
+  margin-bottom: 20px;
+}
+
+.question-block p {
+  font-size: 17px;
+  color: #ffd179;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #d6af6d;
+  border: none;
+  border-radius: 8px;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0cc88;
+}
+
+
+
+
+.result-block {
+  margin-top: 30px;
+  background-color: rgba(45, 35, 65, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #a7e0aa;
+}
